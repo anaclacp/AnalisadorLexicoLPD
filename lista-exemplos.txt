@@ -1,0 +1,105 @@
+Exemplo 1: Estrutura básica
+
+program Basico;
+var int a, b;
+begin
+    a := 5;
+    b := 10;
+    writed(a + b);
+end.
+
+
+Exemplo 2: Condicional simples
+
+program Condicional;
+var int x, y, resultado;
+begin
+    x := 15;
+    y := 20;
+    if x < y then
+        resultado := x + y
+    else
+        resultado := x - y;
+    writed(resultado);
+end.
+Exemplo 3: Laço while
+
+program RepeticaoWhile;
+var int contador;
+begin
+    contador := 0;
+    while contador < 5 do
+    begin
+        writed(contador);
+        contador := contador + 1;
+    end;
+end.
+
+
+Exemplo 4: Laço repeat/until
+
+program RepeticaoRepeat;
+var int contador;
+begin
+    contador := 0;
+    repeat
+        writed(contador);
+        contador := contador + 1;
+    until contador > 5;
+end.
+
+
+Exemplo 5: Vetores
+
+program Vetores;
+var int lista[5], i;
+begin
+    i := 0;
+    while i < 5 do
+    begin
+        lista[i] := i * 2;
+        writed(lista[i]);
+        i := i + 1;
+    end;
+end.
+
+
+Exemplo 6: Sub-rotina (procedimento)
+
+program Subrotina;
+var int a, b;
+procedure Soma(int x, int y);
+begin
+    writed(x + y);
+end;
+begin
+    a := 7;
+    b := 8;
+    Soma(a, b);
+end.
+
+
+Exemplo 7: Operações lógicas
+
+program Logica;
+var int a, b;
+begin
+    a := 10;
+    b := 20;
+    if (a < b) and (b > 15) then
+        writed(a + b);
+    if not (a = b) then
+        writed(b - a);
+end.
+
+
+Exemplo 8: Literais de caracteres
+
+program CharTest;
+var char c;
+begin
+    c := 'A'; { Inicializa com o código ASCII de A }
+    c := c + 1; { Incrementa para 'B' }
+    writec(c); { Exibe o caractere }
+    writed(c); { Exibe o código ASCII de B }
+end.
